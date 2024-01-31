@@ -1,0 +1,48 @@
+footer {
+
+    .gridPadre {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 5px 5px 5px;
+        row-gap: 35px;
+        column-gap: 10px;
+        width: 80px;
+    
+        .tarjetas {
+            width: 30px;
+            height: 30px;
+            justify-content: space-evenly;
+            margin: 5px;
+        }
+    }
+    
+        .titulo {
+            text-transform: uppercase;
+        }
+        
+        .email {
+            width: 12px;
+            height: 12px;
+            margin-right: 5px;
+        }
+        
+        .ubicacion {
+            width: 12px;
+            height: 12px;
+            margin-right: 5px;
+        }
+    
+    .btnSubs {
+        border-color: black;
+        color: black;
+        background-color: white;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    .btnSubs:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    }
