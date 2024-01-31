@@ -1,0 +1,53 @@
+.productos {
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .productos h2 {
+        font-size: 3rem;
+    }
+}
+
+.contenedorProductos {
+    justify-content: center;
+    
+    .card {
+        border: none;
+    }
+    
+    .btnProductos {
+        border-color: black;
+        color: black;
+        background-color: white;
+        text-transform: uppercase;
+    }
+    
+    .btnProductos:hover {
+        background-color: black;
+        color: white;
+    }
+    
+}
+
+.btnProd {
+    border-color: black;
+    color: black;
+    background-color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 350px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.btnProd:hover {
+    background-color: black;
+    color: white;
+}

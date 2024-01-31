@@ -1,0 +1,60 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+
+    .carritoVentas {
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .btnBuscar {
+        border-color: black;
+        color: black;
+        background-color: white;
+        text-transform: uppercase;
+    }
+
+    .btnIniciarSesion {
+        border-color: black;
+        color: black;
+        background-color: white;
+        text-transform: uppercase;
+    }
+
+    .iniciarSesion {
+        display: inline-block;
+        padding: 8px 16px;
+        border: 3px black solid;
+        border-radius: 0px;
+        background-color: white;
+    }
+    
+    a {
+        @include anclas;
+    }
+    
+    .logo {
+        width: 180px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .btnBuscar:hover {
+        background-color: black;
+    }
+    
+    .btnIniciarSesion:hover {
+        background-color: black;
+    }
+}
+
+.menuNav {
+    padding: 8px 16px;
+    background-color: white;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
