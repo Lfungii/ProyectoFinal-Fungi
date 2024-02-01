@@ -3,18 +3,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     background-color: white;
-
-    .carritoVentas {
-        width: 30px;
-        cursor: pointer;
-    }
-
-    .btnBuscar {
-        border-color: black;
-        color: black;
-        background-color: white;
-        text-transform: uppercase;
-    }
+    margin-bottom: 10px;
 
     .btnIniciarSesion {
         border-color: black;
@@ -42,19 +31,40 @@ header {
         margin-left: 10px;
     }
 
-    .btnBuscar:hover {
-        background-color: black;
-    }
-    
     .btnIniciarSesion:hover {
         background-color: black;
     }
+
+    .menuNav {
+        padding: 8px 16px;
+        background-color: white;
+        text-align: center;
+        margin-top: 10px;
+        text-transform: uppercase;
+        margin-left: 20px;
+    }
+
+    .contenedorBuscar {
+        margin-top: 10px;
+
+        .barraBuscar {
+            width: 100px;
+        }
+
+        .btnBuscar {
+            border-color: black;
+            color: black;
+            background-color: white;
+            text-transform: uppercase;
+        }
+
+        .btnBuscar:hover {
+            background-color: black;
+        }    
+    }
+
 }
 
-.menuNav {
-    padding: 8px 16px;
-    background-color: white;
-    text-align: center;
-    margin-top: 50px;
-    text-transform: uppercase;
+body {
+    border: 1px solid black;
 }

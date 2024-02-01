@@ -1,17 +1,245 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 5 | @import "footer";
- *   |         ^^^^^^^^
- *   '
- *   scss\style.scss 5:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 5 \2502  @import \"footer\";\d\a   \2502          ^^^^^^^^\a   \2575 \a   scss\\style.scss 5:9  root stylesheet";
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 10px;
 }
+header .btnIniciarSesion {
+  border-color: black;
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+}
+header .iniciarSesion {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 3px black solid;
+  border-radius: 0px;
+  background-color: white;
+}
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+header .logo {
+  width: 180px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+header .btnIniciarSesion:hover {
+  background-color: black;
+}
+header .menuNav {
+  padding: 8px 16px;
+  background-color: white;
+  text-align: center;
+  margin-top: 10px;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+header .contenedorBuscar {
+  margin-top: 10px;
+}
+header .contenedorBuscar .barraBuscar {
+  width: 100px;
+}
+header .contenedorBuscar .btnBuscar {
+  border-color: black;
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+}
+header .contenedorBuscar .btnBuscar:hover {
+  background-color: black;
+}
+
+body {
+  border: 1px solid black;
+}
+
+.productos {
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-right: 0px;
+  margin-right: 0px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.productos .productos h2 {
+  font-size: 3rem;
+}
+
+.contenedorProductos {
+  justify-content: center;
+  align-items: center;
+}
+.contenedorProductos .card {
+  border: none;
+}
+.contenedorProductos .btnProductos {
+  border-color: black;
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+}
+.contenedorProductos .btnProductos:hover {
+  background-color: black;
+  color: white;
+}
+
+.contenedorBtn {
+  display: flex;
+  justify-content: center;
+}
+.contenedorBtn .btnProd {
+  border-color: black;
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.contenedorBtn .btnProd:hover {
+  background-color: black;
+  color: white;
+}
+
+.finalHeader {
+  border-top: 3px black solid;
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: 30px;
+}
+.finalHeader .textoSociales {
+  font-size: 60px;
+  margin-bottom: 5px;
+}
+.finalHeader .textoInstagram {
+  font-size: 50px;
+  display: inline-block;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+.finalHeader .instagram {
+  width: 80px;
+  cursor: pointer;
+  display: flex;
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.formulario {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 0px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-content: center;
+  border-width: 100px;
+}
+.formulario .btnEnviar {
+  border-color: black;
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+.formulario .btnBorrar {
+  border-color: black;
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+.formulario .nombre {
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  display: block;
+}
+.formulario .btnEnviar:hover {
+  background-color: black;
+  color: white;
+}
+.formulario .btnBorrar:hover {
+  background-color: black;
+  color: white;
+}
+
+footer .gridPadre {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 5px 5px 5px;
+  row-gap: 35px;
+  column-gap: 10px;
+  width: 80px;
+}
+footer .gridPadre .tarjetas {
+  width: 30px;
+  height: 30px;
+  justify-content: space-evenly;
+  margin: 5px;
+}
+footer .titulo {
+  text-transform: uppercase;
+}
+footer .email {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+footer .ubicacion {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+footer .btnSubs {
+  border-color: black;
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+footer .btnSubs:hover {
+  background-color: black;
+  color: white;
+}
+
+main .contenedorNosotros {
+  display: flex;
+  border: 3px solid black;
+  border-radius: 0px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-block: 10px;
+  justify-content: center;
+  align-content: center;
+}
+main .contenedorNosotros .imgNosotros {
+  width: 500px;
+  margin-left: 10px;
+}
+main .contenedorNosotros .imgNosotros2 {
+  width: 300px;
+  height: 400px;
+}
+main .contenedorNosotros .imgCC {
+  width: 300px;
+  height: 400px;
+}
+main .contenedorNosotros p {
+  text-align: start;
+}
+
+/*# sourceMappingURL=style.css.map */

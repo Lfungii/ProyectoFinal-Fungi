@@ -16,6 +16,7 @@
 
 .contenedorProductos {
     justify-content: center;
+    align-items: center;
     
     .card {
         border: none;
@@ -35,19 +36,22 @@
     
 }
 
-.btnProd {
-    border-color: black;
-    color: black;
-    background-color: white;
-    text-transform: uppercase;
-    text-align: center;
-    margin-left: 500px;
-    margin-right: 350px;
-    margin-top: 10px;
-    margin-bottom: 50px;
-}
+.contenedorBtn {
+    display: flex;
+    justify-content: center;
 
-.btnProd:hover {
-    background-color: black;
-    color: white;
+    .btnProd {
+        border-color: black;
+        color: black;
+        background-color: white;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .btnProd:hover {
+        background-color: black;
+        color: white;
+    }
 }
