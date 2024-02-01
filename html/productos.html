@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="bijou, bijouterie, pulseras, comprar, collares, accesorios">
 
     <!-- Meta descripcion -->
 
@@ -26,182 +27,201 @@
 
      <!-- Encabezado -->
 
-     <header>
-        <div>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success btnBuscar" type="submit">Buscar</button>
-            </form>
+     <header class="encabezado">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img class="logo img-fluid" src="../img/logo.png"
+                      alt="Logo de Lael Bijouterie"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          </div>
+
+          <!-- Menú de navegación -->
+
+          <div class="collapse navbar-collapse menuNav" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle active" href="productos.html" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Productos
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="productos.html">Ver todo en productos</a></li>
+                      </ul>
+                  <li class="nav-item">
+                      <a class="nav-link" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="como-comprar.html">¿Cómo comprar?</a>
+                  </li>
+              </ul>
+          </div>
+
+          <div class="container-fluid contenedorBuscar">
+              <form class="d-flex" role="search">
+                  <input class="form-control me-2 barraBuscar" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success btnBuscar" type="submit">Search</button>
+              </form>
+          </div>
+      </nav>
+  </header>
+
+      <!-- Cards de productos -->
+
+    <div class="productos">
+      <h2>Productos</h2>
+  </div>
+
+  <div class="container-fluid contenedorProductos">
+      <div class="row">
+          <div class="card col-xl-3 col-md-6 col-sm-12 mx-auto" style="width: 18rem;">
+              <img src="../img/collardeperlas.jpg" class="card-img-top" alt="collar de perlas">
+              <div class="card-body">
+                  <h5 class="card-title">Collar de perlas</h5>
+                  <p class="card-text">Collar de perlas diseñado con elementos que simulan ser perlas blancas y
+                      brillantes, de buena calidad y resistentes.</p>
+                  <button type="button" class="btn btn-primary btnProductos" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                      Añadir al carrito
+                  </button>
+              </div>
+          </div>
+          <div class="card col-xl-3 col-md-6 col-sm-12 mx-auto" style="width: 18rem;">
+              <img src="../img/holderazul.jpg" class="card-img-top" alt="Holder azul">
+              <div class="card-body">
+                  <h5 class="card-title">Holder azul</h5>
+                  <p class="card-text">Holder para barbijos o lentes diseñado con perlas azules y cadena color plateada, generando un diseño delicado.</p>
+                  <button type="button" class="btn btn-primary btnProductos" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                      Añadir al carrito
+                  </button>
+              </div>
+          </div>
+          <div class="card col-xl-3 col-md-6 col-sm-12 mx-auto" style="width: 18rem;">
+              <img src="../img/pulserasx2.jpg" class="card-img-top" alt="Pulserasx2">
+              <div class="card-body">
+                  <h5 class="card-title">Pulseras viajes</h5>
+                  <p class="card-text">Dos pulseras para compartir con dijes de viajes, diseñadas con perlas blancas y doradas, que dan un efecto antiguo.</p>
+                  <button type="button" class="btn btn-primary btnProductos" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                      Añadir al carrito
+                  </button>
+              </div>
+          </div>
+          <div class="card col-xl-3 col-md-6 col-sm-12 mx-auto" style="width: 18rem;">
+              <img src="../img/llavero.jpg" class="card-img-top" alt="Llavero">
+              <div class="card-body">
+                  <h5 class="card-title">Llavero mejor mamá</h5>
+                  <p class="card-text">Llavero con decoración de diamantes violetas y la frase "best mom", con herrajes color plateado.</p>
+                  <button type="button" class="btn btn-primary btnProductos" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                      Añadir al carrito
+                  </button>
+              </div>
+          </div>
+          <div class="card col-xl-3 col-md-6 col-sm-12 mx-auto" style="width: 18rem;">
+              <img src="../img/arosrojos.jpg" class="card-img-top" alt="aros rojos">
+              <div class="card-body">
+                  <h5 class="card-title">Aros rojos</h5>
+                  <p class="card-text">Aros colgantes diseñados con perlas color rojo y herrajes plateados, intercalados con accesorios color plata.</p>
+                  <button type="button" class="btn btn-primary btnProductos" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                      Añadir al carrito
+                  </button>
+              </div>
+          </div>
+          <div class="card col-xl-3 col-md-6 col-sm-12 mx-auto" style="width: 18rem;">
+              <img src="../img/pulseracorazonverde.jpg" class="card-img-top" alt="pulsera verde con corazon">
+              <div class="card-body">
+                  <h5 class="card-title">Pulsera corazón</h5>
+                  <p class="card-text">Pulsera diseñada con perlas color verde, que incluye en el centro un dije de corazón de color plateado, haciendo juego.</p>
+                  <button type="button" class="btn btn-primary btnProductos" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                      Añadir al carrito
+                  </button>
+              </div>
+          </div>
+          <div class="card col-xl-3 col-md-6 col-sm-12 mx-auto" style="width: 18rem;">
+              <img src="../img/tobilleraverde.jpg" class="card-img-top" alt="tobillera verde">
+              <div class="card-body">
+                  <h5 class="card-title">Tobillera con inicial</h5>
+                  <p class="card-text">Tobillera diseñada con perlas color verde, con dos dijes: uno a elección y el otro con la inicial de preferencia.</p>
+                  <button type="button" class="btn btn-primary btnProductos" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                      Añadir al carrito
+                  </button>
+              </div>
+          </div>
+          <div class="card col-xl-3 col-md-6 col-sm-12 mx-auto" style="width: 18rem;">
+              <img src="../img/collarincial.jpg" class="card-img-top" alt="collar con inicial">
+              <div class="card-body">
+                  <h5 class="card-title">Cadenita con inicial</h5>
+                  <p class="card-text">Cadena de plata acompañada sutilmente por un dije con una inicial de preferencia, totalmente personalizable.</p>
+                  <button type="button" class="btn btn-primary btnProductos" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                      Añadir al carrito
+                  </button>
+              </div>
+          </div>
+          <div class="card col-xl-3 col-md-6 col-sm-12 mx-auto" style="width: 18rem;">
+            <img src="../img/anilloazul.jpg" class="card-img-top" alt="anillo azul">
+            <div class="card-body">
+                <h5 class="card-title">Anillo corazón</h5>
+                <p class="card-text">Anillo de mostacillas azules con una mostacilla de corazón color azul en el centro, adaptable y ajustable a los dedos.</p>
+                <button type="button" class="btn btn-primary btnProductos" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Añadir al carrito
+                </button>
+            </div>
         </div>
-
-        <a href="../index.html"><img class="logo" src="../img/logo.png" alt="logo de lael bijouterie"></a>
-
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button class="btn btn-primary me-md-2 btnIniciarSesion" type="button">Entrar</button>
-            <button class="btn btn-primary btnIniciarSesion" type="button">Registrarse</button>
+        <div class="card col-xl-3 col-md-6 col-sm-12 mx-auto" style="width: 18rem;">
+          <img src="../img/collartortuga.jpg" class="card-img-top" alt="collar de tortuga">
+          <div class="card-body">
+              <h5 class="card-title">Cadenita tortuga</h5>
+              <p class="card-text">Cadena de plata acompañada sutilmente por un dije con una tortuga, para representar el amor por el mundo marino.</p>
+              <button type="button" class="btn btn-primary btnProductos" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">
+                  Añadir al carrito
+              </button>
+          </div>
+      </div>
+      <div class="card col-xl-3 col-md-6 col-sm-12 mx-auto" style="width: 18rem;">
+        <img src="../img/arosrayos.jpg" class="card-img-top" alt="aros de rayo">
+        <div class="card-body">
+            <h5 class="card-title">Aros thunder</h5>
+            <p class="card-text">Aros de plata con dijes de rayos plateados, perfectos para destacar con un accesorio simple.</p>
+            <button type="button" class="btn btn-primary btnProductos" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                Añadir al carrito
+            </button>
         </div>
-
-        <img class="carritoVentas" src="../img/carritodecompras.png" alt="carrito de compras">
-    </header>
-
- <!-- Menú de navegación -->
-
- <nav class="navbar navbar-expand-lg bg-body-tertiary menuNav text-center">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
     </div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Productos
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="productos.html">Ver todo</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="nosotros.html">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="como comprar.html">¿Cómo comprar?</a>
-          </li>
-        </ul>
+    <div class="card col-xl-3 col-md-6 col-sm-12 mx-auto" style="width: 18rem;">
+      <img src="../img/pulseramundo.jpg" class="card-img-top" alt="pulsera de mundo">
+      <div class="card-body">
+          <h5 class="card-title">Pulsera mundo</h5>
+          <p class="card-text">Pulsera diseñada con diamantes color turquesa y perlas blancas, que incluye en el centro un dije del mundo de color plateado.</p>
+          <button type="button" class="btn btn-primary btnProductos" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              Añadir al carrito
+          </button>
       </div>
-    </nav>
-
-    <!-- Carrousel de fotos principales -->
-
-    <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active carrousel">
-            <img src="../img/collarazul.webp" class="d-block w-100" alt="collar azul">
-          </div>
-          <div class="carousel-item carrousel">
-            <img src="../img/pulsera4.webp" class="d-block w-100" alt="pulsera de colores">
-          </div>
-          <div class="carousel-item carrousel">
-            <img src="../img/collarcorazones.webp" class="d-block w-100" alt="collar de corazones">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
+  </div>
       </div>
-
-       <!-- Cards de productos -->
-
-       <div class="productos">
-        <h2>Productos</h2>
-      </div>
-
-    <div class="container-fluid contenedorProductos m-5">
-        <div class="row">
-            <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
-                <img src="../img/collardeperlas.jpg" class="card-img-top" alt="collar de perlas">
-                <div class="card-body">
-                  <h5 class="card-title">Collar de perlas</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <button type="button" class="btn btn-primary btnProductos" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Añadir al carrito
-                  </button>
-                </div>
-              </div>
-            <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
-                <img src="../img/holderazul.jpg" class="card-img-top" alt="Holder azul">
-                <div class="card-body">
-                  <h5 class="card-title">Holder azul</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <button type="button" class="btn btn-primary btnProductos" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Añadir al carrito
-                  </button>
-                </div>
-              </div>
-            <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
-                <img src="../img/pulserasx2.jpg" class="card-img-top" alt="Pulserasx2">
-                <div class="card-body">
-                  <h5 class="card-title">Pulseras viajes</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <button type="button" class="btn btn-primary btnProductos" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Añadir al carrito
-                  </button>
-                </div>
-              </div>
-            <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
-                <img src="../img/llavero.jpg" class="card-img-top" alt="Llavero">
-                <div class="card-body">
-                  <h5 class="card-title">Llavero mejor mamá</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <button type="button" class="btn btn-primary btnProductos" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Añadir al carrito
-                  </button>
-                </div>
-              </div>
-              <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
-                <img src="../img/collardeperlas.jpg" class="card-img-top" alt="collar de perlas">
-                <div class="card-body">
-                  <h5 class="card-title">Collar de perlas</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <button type="button" class="btn btn-primary btnProductos" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Añadir al carrito
-                  </button>
-                </div>
-              </div>
-            <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
-                <img src="../img/holderazul.jpg" class="card-img-top" alt="Holder azul">
-                <div class="card-body">
-                  <h5 class="card-title">Holder azul</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <button type="button" class="btn btn-primary btnProductos" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Añadir al carrito
-                  </button>
-                </div>
-              </div>
-            <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
-                <img src="../img/pulserasx2.jpg" class="card-img-top" alt="Pulserasx2">
-                <div class="card-body">
-                  <h5 class="card-title">Pulseras viajes</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <button type="button" class="btn btn-primary btnProductos" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Añadir al carrito
-                  </button>
-                </div>
-              </div>
-            <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
-                <img src="../img/llavero.jpg" class="card-img-top" alt="Llavero">
-                <div class="card-body">
-                  <h5 class="card-title">Llavero mejor mamá</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <button type="button" class="btn btn-primary btnProductos" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Añadir al carrito
-                  </button>
-                </div>
-              </div>    
-        </div>
-    </div> 
+  </div> 
 
     <!-- Modal -->
 
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade contenedorModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -232,14 +252,14 @@
   <form>
       <label class="nombre" for="nombre y apellido">Nombre y apellido</label>
       <input class="nombre" type="text" id="nombre y apellido"> 
-      <br><br>    
+         
       <label class="nombre" for="dirección de correo electrónico">Dirección de correo electrónico</label>
       <input class="nombre" type="text" id="dirección de correo de electrónico">
-      <br><br>
+    
       <label class="nombre" for="¿Tenés dudas o querés dejarnos un mensaje?">¿Tenés dudas o querés dejarnos un mensaje?</label>
-      <br>
+      
       <textarea class="nombre" name="" id="" cols="30" rows="10" placeholder="Dejá tu mensaje"></textarea>
-      <br><br>
+    
       <div class="contenedorBotones">
       <input class="btnEnviar" type="submit">
       <input class="btnBorrar" type="reset">
@@ -260,7 +280,7 @@
               <li class="nav-item mb-2"><a href="productos.html" class="nav-link p-0 text-body-secondary">Productos</a></li>
               <li class="nav-item mb-2"><a href="nosotros.html" class="nav-link p-0 text-body-secondary">Nosotros</a></li>
               <li class="nav-item mb-2"><a href="contacto.html" class="nav-link p-0 text-body-secondary">Contacto</a></li>
-              <li class="nav-item mb-2"><a href="como comprar.html" class="nav-link p-0 text-body-secondary">¿Cómo comprar?</a></li>
+              <li class="nav-item mb-2"><a href="como-comprar.html" class="nav-link p-0 text-body-secondary">¿Cómo comprar?</a></li>
             </ul>
           </div>
     
@@ -290,10 +310,9 @@
           <div class="col-md-5 offset-md-1 mb-3">
             <form>
               <h5 class="titulo">Subscribite para recibir noticias</h5>
-              <p>Monthly digest of what's new and exciting from us.</p>
               <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                 <label for="newsletter1" class="visually-hidden">Correo electronico</label>
-                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <input id="newsletter1" type="text" class="form-control" placeholder="Correo electrónico">
                 <button class="btn btn-primary btnSubs" type="button">Subscribite</button>
               </div>
             </form>
@@ -303,7 +322,7 @@
         <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
           <p>&copy; 2024 Lael Bijouterie, Inc. Todos los derechos reservados.</p>
           <ul class="list-unstyled d-flex">
-            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg>Instagram</a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/laelbijou/"><svg class="bi" width="24" height="24"><use xlink:href="https://www.instagram.com/laelbijou/"/></svg>Instagram</a></li>
           </ul>
         </div>
       </footer>
