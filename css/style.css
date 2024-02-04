@@ -214,7 +214,7 @@ footer .btnSubs:hover {
 
 main .contenedorNosotros {
   display: flex;
-  border: 3px solid black;
+  border: 1px solid white;
   border-radius: 0px;
   margin-top: 20px;
   margin-bottom: 50px;
@@ -226,16 +226,8 @@ main .contenedorNosotros .imgNosotros {
   width: 500px;
   margin-left: 10px;
 }
-main .contenedorNosotros .imgNosotros2 {
-  width: 300px;
-  height: 400px;
-}
-main .contenedorNosotros .imgCC {
-  width: 300px;
-  height: 400px;
-}
 main .contenedorNosotros p {
-  text-align: start;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
