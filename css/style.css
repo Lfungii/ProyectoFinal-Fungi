@@ -222,10 +222,6 @@ main .contenedorNosotros {
   justify-content: center;
   align-content: center;
 }
-main .contenedorNosotros .imgNosotros {
-  width: 500px;
-  margin-left: 10px;
-}
 main .contenedorNosotros p {
   text-align: center;
 }
